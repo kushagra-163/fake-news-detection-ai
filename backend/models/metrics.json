@@ -1,0 +1,244 @@
+{
+  "dataset_metadata": {
+    "raw_total_rows": 4056,
+    "cleaned_total_rows": 3909,
+    "duplicates_removed": 147,
+    "train_samples": 3127,
+    "test_samples": 782,
+    "class_distribution": {
+      "REAL": 2033,
+      "FAKE": 1876
+    },
+    "num_classes": 2,
+    "feature_count": 5000,
+    "tfidf_config": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 5000,
+      "min_df": 2,
+      "max_df": 0.95
+    }
+  },
+  "models_evaluation": {
+    "Logistic Regression": {
+      "accuracy": 0.7532,
+      "precision": 0.7336,
+      "recall": 0.8256,
+      "f1_score": 0.7769,
+      "confusion_matrix": [
+        [
+          253,
+          122
+        ],
+        [
+          71,
+          336
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "true_negative_FAKE": 253,
+        "false_positive_REAL": 122,
+        "false_negative_FAKE": 71,
+        "true_positive_REAL": 336
+      }
+    },
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.766,
+      "precision": 0.7705,
+      "recall": 0.7838,
+      "f1_score": 0.7771,
+      "confusion_matrix": [
+        [
+          280,
+          95
+        ],
+        [
+          88,
+          319
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "true_negative_FAKE": 280,
+        "false_positive_REAL": 95,
+        "false_negative_FAKE": 88,
+        "true_positive_REAL": 319
+      }
+    },
+    "Linear SVM": {
+      "accuracy": 0.7519,
+      "precision": 0.7506,
+      "recall": 0.7838,
+      "f1_score": 0.7668,
+      "confusion_matrix": [
+        [
+          269,
+          106
+        ],
+        [
+          88,
+          319
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "true_negative_FAKE": 269,
+        "false_positive_REAL": 106,
+        "false_negative_FAKE": 88,
+        "true_positive_REAL": 319
+      }
+    }
+  },
+  "selected_model": {
+    "name": "Multinomial Naive Bayes",
+    "selection_criterion": "Highest F1-Score on test evaluation set",
+    "metrics": {
+      "accuracy": 0.766,
+      "precision": 0.7705,
+      "recall": 0.7838,
+      "f1_score": 0.7771,
+      "confusion_matrix": [
+        [
+          280,
+          95
+        ],
+        [
+          88,
+          319
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "true_negative_FAKE": 280,
+        "false_positive_REAL": 95,
+        "false_negative_FAKE": 88,
+        "true_positive_REAL": 319
+      }
+    }
+  },
+  "feature_importance": {
+    "top_fake_predictive_words": [
+      {
+        "word": "breaking",
+        "weight": -3.0383
+      },
+      {
+        "word": "trump",
+        "weight": -3.005
+      },
+      {
+        "word": "brad",
+        "weight": -2.247
+      },
+      {
+        "word": "jennifer",
+        "weight": -2.0307
+      },
+      {
+        "word": "pitt",
+        "weight": -1.9596
+      },
+      {
+        "word": "brad pitt",
+        "weight": -1.9293
+      },
+      {
+        "word": "just",
+        "weight": -1.8828
+      },
+      {
+        "word": "jenner",
+        "weight": -1.8394
+      },
+      {
+        "word": "jolie",
+        "weight": -1.6534
+      },
+      {
+        "word": "angelina",
+        "weight": -1.6212
+      },
+      {
+        "word": "angelina jolie",
+        "weight": -1.6212
+      },
+      {
+        "word": "celebrities",
+        "weight": -1.5184
+      },
+      {
+        "word": "not",
+        "weight": -1.4372
+      },
+      {
+        "word": "aniston",
+        "weight": -1.4086
+      },
+      {
+        "word": "gwen",
+        "weight": -1.3384
+      }
+    ],
+    "top_real_predictive_words": [
+      {
+        "word": "transcript",
+        "weight": 1.7913
+      },
+      {
+        "word": "the",
+        "weight": 1.6078
+      },
+      {
+        "word": "season",
+        "weight": 1.5939
+      },
+      {
+        "word": "star",
+        "weight": 1.4182
+      },
+      {
+        "word": "ad",
+        "weight": 1.3721
+      },
+      {
+        "word": "at",
+        "weight": 1.2945
+      },
+      {
+        "word": "and",
+        "weight": 1.2309
+      },
+      {
+        "word": "debate",
+        "weight": 1.1962
+      },
+      {
+        "word": "at the",
+        "weight": 1.1416
+      },
+      {
+        "word": "mccain",
+        "weight": 1.1301
+      },
+      {
+        "word": "cast",
+        "weight": 1.1095
+      },
+      {
+        "word": "awards",
+        "weight": 1.1076
+      },
+      {
+        "word": "netflix",
+        "weight": 1.1069
+      },
+      {
+        "word": "remarks",
+        "weight": 1.0516
+      },
+      {
+        "word": "best",
+        "weight": 1.033
+      }
+    ]
+  }
+}
