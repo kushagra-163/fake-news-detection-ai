@@ -74,3 +74,30 @@ The system processes a news headline or text, transforms it into numerical TF-ID
              ┌───────────┼───────────┐
              ▼           ▼           ▼
            FAKE        REAL      UNCERTAIN
+
+
+
+
+
+
+---
+
+## Project Screenshots
+
+### News Analyzer
+
+![News Analyzer](docs/screenshots/analyzer.png)
+
+### Model Insights
+
+![Model Insights](docs/screenshots/model-insights.png)
+
+### Model Comparison
+
+![Model Comparison](docs/screenshots/model-comparison.png)
+
+### About & System Architecture
+
+![About & System Architecture](docs/screenshots/about.png)
+
+---
